@@ -1,0 +1,39 @@
+/* Simple layout and carousel styles */
+body {
+  background: #f8f9fa;
+}
+
+.section {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.carousel-row {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 0.5rem 0.25rem;
+  scroll-behavior: smooth;
+}
+
+.carousel-row::-webkit-scrollbar {
+  height: 10px;
+}
+
+.carousel-row::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.15);
+  border-radius: 8px;
+}
+
+.carousel-card {
+  flex: 0 0 260px; /* fixed card width */
+  min-width: 220px;
+}
+
+/* Make the carousel buttons unobtrusive on small screens */
+.carousel-btn { margin-left: .25rem; }
+
+@media (max-width: 576px) {
+  .carousel-card { flex: 0 0 80%; }
+}

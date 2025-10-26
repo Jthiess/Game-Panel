@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    <div class="container py-4">
+      <!-- Top section -->
+      <header class="section section-top text-center p-4 mb-4">
+        <h1 class="display-6">Game Servers</h1>
+        <p class="lead">Blahblahblah.</p>
+      </header>
+
+      <!-- Middle section with horizontal scrollable carousel -->
+      <section class="section section-middle mb-5">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <h2>Middle Carousel</h2>
+          <div>
+            <button class="btn btn-outline-secondary btn-sm carousel-btn" data-target="middle" data-dir="left">◀</button>
+            <button class="btn btn-outline-secondary btn-sm carousel-btn" data-target="middle" data-dir="right">▶</button>
+          </div>
+        </div>
+
+        <div class="carousel-row" id="carousel-middle">
+          {% for card in middle_cards %}
+          <article class="card carousel-card">
+            <div class="card-body">
+              <h5 class="card-title">{{ card.title }}</h5>
+              <p class="card-text">{{ card.text }}</p>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+
+      <!-- Bottom section with another horizontal carousel -->
+      <section class="section section-bottom">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <h2>Bottom Carousel</h2>
+          <div>
+            <button class="btn btn-outline-secondary btn-sm carousel-btn" data-target="bottom" data-dir="left">◀</button>
+            <button class="btn btn-outline-secondary btn-sm carousel-btn" data-target="bottom" data-dir="right">▶</button>
+          </div>
+        </div>
+
+        <div class="carousel-row" id="carousel-bottom">
+          {% for card in bottom_cards %}
+          <article class="card carousel-card">
+            <div class="card-body">
+              <h5 class="card-title">{{ card.title }}</h5>
+              <p class="card-text">{{ card.text }}</p>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/carousel.js"></script>
+  </body>
+</html>
