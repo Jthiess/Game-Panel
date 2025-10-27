@@ -6,10 +6,14 @@ app = Flask(__name__)
 def index():
     # Example card data that you can edit or replace with dynamic data
     middle_cards = [
-        {'title': 'Middle Card 1', 'text': 'Some info about card 1'},
-        {'title': 'Middle Card 2', 'text': 'Some info about card 2'},
-        {'title': 'Middle Card 3', 'text': 'Some info about card 3'},
-        {'title': 'Middle Card 4', 'text': 'Some info about card 4'},
+        {'name': 'Game Server 1', 'motd': 'motd1', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server"},
+        {'name': 'Game Server 2', 'motd': 'motd2', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server"},
+        {'name': 'Game Server 3', 'motd': 'motd3', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server"},
+        {'name': 'Game Server 4', 'motd': 'motd4', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server"},
+        {'name': 'Game Server 5', 'motd': 'motd5', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server"},
+        {'name': 'Game Server 6', 'motd': 'motd6', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server"},
+        {'name': 'Game Server 7', 'motd': 'motd7', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server"},
+        {'name': 'Game Server 8', 'motd': 'motd8', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server"},
     ]
 
     bottom_cards = [
@@ -17,6 +21,10 @@ def index():
         {'title': 'Bottom Card B', 'text': 'Details B'},
         {'title': 'Bottom Card C', 'text': 'Details C'},
         {'title': 'Bottom Card D', 'text': 'Details D'},
+        {'title': 'Bottom Card E', 'text': 'Details E'},
+        {'title': 'Bottom Card F', 'text': 'Details F'},
+        {'title': 'Bottom Card G', 'text': 'Details G'},
+        {'title': 'Bottom Card H', 'text': 'Details H'},
     ]
 
     return render_template('index.html', middle_cards=middle_cards, bottom_cards=bottom_cards)
