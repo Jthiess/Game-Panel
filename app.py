@@ -17,14 +17,14 @@ def get_card_image(name):
 def index():
     # Example card data that you can edit or replace with dynamic data
     middle_cards = [
-        {'name': 'Game Server 1', 'motd': 'motd1', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server", 'image': get_card_image('testing')},
-        {'name': 'Game Server 2', 'motd': 'motd2', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server", 'image': get_card_image('testing')},
-        {'name': 'Game Server 3', 'motd': 'motd3', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server", 'image': get_card_image('testing')},
-        {'name': 'Game Server 4', 'motd': 'motd4', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server", 'image': get_card_image('testing')},
-        {'name': 'Game Server 5', 'motd': 'motd5', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server", 'image': get_card_image('testing')},
-        {'name': 'Game Server 6', 'motd': 'motd6', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server", 'image': get_card_image('testing')},
-        {'name': 'Game Server 7', 'motd': 'motd7', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server", 'image': get_card_image('testing')},
-        {'name': 'Game Server 8', 'motd': 'motd8', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server", 'image': get_card_image('testing')},
+        {'name': 'Game Server 1', 'motd': 'motd1', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server", 'image': get_card_image('minecraft')},
+        {'name': 'Game Server 2', 'motd': 'motd2', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server", 'image': get_card_image('')},
+        {'name': 'Game Server 3', 'motd': 'motd3', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server", 'image': get_card_image('')},
+        {'name': 'Game Server 4', 'motd': 'motd4', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server", 'image': get_card_image('')},
+        {'name': 'Game Server 5', 'motd': 'motd5', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server", 'image': get_card_image('')},
+        {'name': 'Game Server 6', 'motd': 'motd6', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server", 'image': get_card_image('')},
+        {'name': 'Game Server 7', 'motd': 'motd7', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server", 'image': get_card_image('')},
+        {'name': 'Game Server 8', 'motd': 'motd8', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server", 'image': get_card_image('')},
     ]
 
     bottom_cards = [

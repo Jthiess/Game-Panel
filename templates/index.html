@@ -38,25 +38,30 @@
             </div>
             <div class="card-body">
               <!-- Server status (Online/Offline) -->
-              <p class="card-text">
-                <small class="text-muted">
-                  Status: {% if card.online %}Online{% else %}Offline{% endif %}
-                </small>
-              </p>
-              <!-- Server name -->
-              <h5 class="card-title">{{ card.name }}</h5>
-              <!-- Message of the day -->
-              <p class="card-text">{{ card.motd }}</p>
-              <!-- Player count -->
-              <p class="card-text">
-                <strong>Players: {{ card.playing_now }}/{{ card.playing_max }}</strong>
-              </p>
-              <!-- Server version -->
-              <p class="card-text">
-                <small class="text-muted">Version: {{ card.version }}</small>
-              </p>
+              <div class="status-badge {% if card.online %}status-online{% else %}status-offline{% endif %}">
+                {% if card.online %}Online{% else %}Offline{% endif %}
+              </div>
+              <!-- Server name and MOTD -->
+              <div class="server-header">
+                <h5 class="card-title">{{ card.name }}</h5>
+                <p class="card-motd">{{ card.motd }}</p>
+              </div>
+              <!-- Info sections -->
+              <div class="info-section">
+                <div class="info-block">
+                  <h6>Players</h6>
+                  <p>{{ card.playing_now }}/{{ card.playing_max }}</p>
+                </div>
+                <div class="divider"></div>
+                <div class="info-block">
+                  <h6>Version</h6>
+                  <p>{{ card.version }}</p>
+                </div>
+              </div>
               <!-- Server description -->
-              <p class="card-text">{{ card.description }}</p>
+              <div class="description-section">
+                <p class="card-text">{{ card.description }}</p>
+              </div>
             </div>
           </article>
           {% endfor %}
