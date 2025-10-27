@@ -111,6 +111,11 @@ body {
     color: white;
 }
 
+.status-archived {
+    background-color: #9c45ff;
+    color: white;
+}
+
 /* Server header styles */
 .server-header {
     text-align: center;

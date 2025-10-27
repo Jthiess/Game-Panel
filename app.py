@@ -27,15 +27,15 @@ def index():
         {'name': 'Game Server 8', 'motd': 'motd8', 'online': True, 'game': 'Minecraft', 'playing_now': 12, 'playing_max': 20, "version": "1.8.9", "description": "A fun Minecraft server", 'image': get_card_image('')},
     ]
 
-    bottom_cards = [
-        {'name': 'Bottom Card A', 'game': 'Details A', 'version': '1.8.9', 'file_size': '150MB', 'retirement_date': '2025-12-31', 'description': 'BottomA description', 'image': get_card_image('testing')},
-        {'name': 'Bottom Card B', 'game': 'Details B', 'version': '1.8.9', 'file_size': '150MB', 'retirement_date': '2025-12-31', 'description': 'BottomB description', 'image': get_card_image('testing')},
-        {'name': 'Bottom Card C', 'game': 'Details C', 'version': '1.8.9', 'file_size': '150MB', 'retirement_date': '2025-12-31', 'description': 'BottomC description', 'image': get_card_image('testing')},
-        {'name': 'Bottom Card D', 'game': 'Details D', 'version': '1.8.9', 'file_size': '150MB', 'retirement_date': '2025-12-31', 'description': 'BottomD description', 'image': get_card_image('testing')},
-        {'name': 'Bottom Card E', 'game': 'Details E', 'version': '1.8.9', 'file_size': '150MB', 'retirement_date': '2025-12-31', 'description': 'BottomE description', 'image': get_card_image('testing')},
-        {'name': 'Bottom Card F', 'game': 'Details F', 'version': '1.8.9', 'file_size': '150MB', 'retirement_date': '2025-12-31', 'description': "BottomF description", 'image': get_card_image('testing')},
-        {'name': 'Bottom Card G', 'game': 'Details G', 'version': '1.8.9', 'file_size': '150MB', 'retirement_date': '2025-12-31', 'description': "BottomG description", 'image': get_card_image('testing')},
-        {'name': 'Bottom Card H', 'game': 'Details H', 'version': '1.8.9', 'file_size': '150MB', 'retirement_date': '2025-12-31', 'description': "BottomH description", 'image': get_card_image('testing')},
+    bottom_cards = [    
+        {'name': 'Bottom Card A', 'game': 'Details A', 'version': '1.8.9', 'file_size': '150MB', 'retirement_date': '2025-12-31', 'description': 'BottomA description', 'image': get_card_image('')},
+        {'name': 'Bottom Card B', 'game': 'Details B', 'version': '1.8.9', 'file_size': '150MB', 'retirement_date': '2025-12-31', 'description': 'BottomB description', 'image': get_card_image('')},
+        {'name': 'Bottom Card C', 'game': 'Details C', 'version': '1.8.9', 'file_size': '150MB', 'retirement_date': '2025-12-31', 'description': 'BottomC description', 'image': get_card_image('')},
+        {'name': 'Bottom Card D', 'game': 'Details D', 'version': '1.8.9', 'file_size': '150MB', 'retirement_date': '2025-12-31', 'description': 'BottomD description', 'image': get_card_image('')},
+        {'name': 'Bottom Card E', 'game': 'Details E', 'version': '1.8.9', 'file_size': '150MB', 'retirement_date': '2025-12-31', 'description': 'BottomE description', 'image': get_card_image('')},
+        {'name': 'Bottom Card F', 'game': 'Details F', 'version': '1.8.9', 'file_size': '150MB', 'retirement_date': '2025-12-31', 'description': "BottomF description", 'image': get_card_image('')},
+        {'name': 'Bottom Card G', 'game': 'Details G', 'version': '1.8.9', 'file_size': '150MB', 'retirement_date': '2025-12-31', 'description': "BottomG description", 'image': get_card_image('')},
+        {'name': 'Bottom Card H', 'game': 'Details H', 'version': '1.8.9', 'file_size': '150MB', 'retirement_date': '2025-12-31', 'description': "BottomH description", 'image': get_card_image('')},
     ]
 
     return render_template('index.html', middle_cards=middle_cards, bottom_cards=bottom_cards)
