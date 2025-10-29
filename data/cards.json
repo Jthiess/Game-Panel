@@ -1,0 +1,87 @@
+{
+  "middle_cards": [
+    {
+      "name": "Homestead",
+      "motd": "Does this mean you beat the Oregon Trail?",
+      "online": true,
+      "game": "Minecraft",
+      "playing_now": 0,
+      "playing_max": 20,
+      "version": "1.20.1",
+      "description": "This modpack has a super cozy vibe, features a custom world, fancy wildlife, pretty shaders, and a quest system (Its not forced down your throat tho). It is overall just a really nice environment to play Minecraft in, and it seems like it would be fun!",
+      "ip": "homestead.mentallygay.com",
+      "modded": true,
+      "pack-link": "https://modrinth.com/modpack/homestead"
+    },
+    {
+      "name": "GayFuck",
+      "motd": "die",
+      "online": true,
+      "game": "Minecraft",
+      "playing_now": 8,
+      "playing_max": 20,
+      "version": "1.20.4",
+      "description": "fuck off",
+      "modded": false
+    },
+    {
+      "name": "Game Server 3",
+      "motd": "Maintenance tonight",
+      "online": false,
+      "game": "Valheim",
+      "playing_now": 0,
+      "playing_max": 50,
+      "version": "0.214.4",
+      "description": "PvE world for friends"
+    },
+    {
+      "name": "Game Server 4",
+      "motd": "Event this weekend",
+      "online": true,
+      "game": "Terraria",
+      "playing_now": 4,
+      "playing_max": 16,
+      "version": "1.4.4",
+      "description": "Classic modded"
+    },
+    {
+      "name": "Game Server 5",
+      "motd": "Join the race",
+      "online": true,
+      "game": "GTA V",
+      "playing_now": 20,
+      "playing_max": 32,
+      "version": "1.0",
+      "description": "Roleplay and racing"
+    }
+  ],
+  "bottom_cards": [
+    {
+      "name": "Bottom Card A",
+      "motd": "",
+      "game": "Details A",
+      "version": "1.8.9",
+      "file_size": "150MB",
+      "retirement_date": "2025-12-31",
+      "description": "BottomA description"
+    },
+    {
+      "name": "Bottom Card B",
+      "motd": "",
+      "game": "Details B",
+      "version": "2.3.1",
+      "file_size": "220MB",
+      "retirement_date": "2026-06-30",
+      "description": "BottomB description"
+    },
+    {
+      "name": "Bottom Card C",
+      "motd": "",
+      "game": "Details C",
+      "version": "0.9.5",
+      "file_size": "80MB",
+      "retirement_date": "2024-11-15",
+      "description": "BottomC description"
+    }
+  ]
+}

@@ -1,16 +1,47 @@
 
 /* =========================
-   Base Layout Styles
+   Theme variables & Base Layout Styles
    ========================= */
+:root {
+    /* Dark theme palette */
+    --bg: #161616;            /* page background */
+    --surface: #202122;       /* section cards */
+    --card-bg: #22242b;       /* inner card body */
+    --text: #e6eef6;          /* primary text */
+    --muted: #9aa6b2;         /* secondary text */
+    --muted-border: rgba(255,255,255,0.04);
+    --accent: #7c3aed;        /* accent / purple */
+    --online: #22c55e;
+    --offline: #6b7280;
+    --archived: #9c45ff;
+    --scroll-thumb: rgba(255,255,255,0.08);
+}
+
+/* Light theme overrides (toggled via `data-theme="light"` on <html>) */
+[data-theme="light"] {
+    --bg: #f8fafc;           /* near-white page background */
+    --surface: #ffffff;      /* section cards */
+    --card-bg: #ffffff;      /* inner card body */
+    --text: #0b1220;         /* dark text */
+    --muted: #6b7280;        /* muted text */
+    --muted-border: rgba(0,0,0,0.06);
+    --accent: #6d28d9;
+    --online: #16a34a;
+    --offline: #9ca3af;
+    --archived: #7c3aed;
+    --scroll-thumb: rgba(0,0,0,0.12);
+}
+
 body {
-    background: #121212;
-    color: #fff;
+    background: var(--bg);
+    color: var(--text);
+    transition: background-color 200ms ease, color 200ms ease;
 }
 
 .section {
-    background: #1e1e1f;
+    background: var(--surface);
     border-radius: 30px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 18px rgba(2,6,23,0.6);
 }
 
 /* =========================
@@ -34,9 +65,38 @@ body {
     height: 10px;
 }
 .carousel-row::-webkit-scrollbar-thumb {
-    background: rgba(0,0,0,0.15);
+    background: var(--scroll-thumb);
     border-radius: 8px;
 }
+
+/* Theme toggle button (fixed in the corner) */
+#theme-toggle {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    background: rgba(255,255,255,0.04);
+    color: var(--text);
+    border: 1px solid var(--muted-border);
+    padding: 0.5rem 0.6rem;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 6px 18px rgba(2,6,23,0.5);
+    transition: background-color 150ms ease, transform 120ms ease;
+}
+
+#theme-toggle:hover { transform: translateY(-2px); }
+
+#theme-toggle:active { transform: translateY(0); }
+
+#theme-toggle .label { font-size: 0.9rem; color: var(--muted); }
+
+/* Ensure toggle looks appropriate on light theme */
+[data-theme="light"] #theme-toggle { background: rgba(0,0,0,0.04); box-shadow: 0 6px 18px rgba(2,6,23,0.06); }
 
 /* Card image styling */
 .card-image {
@@ -78,16 +138,23 @@ body {
 
 .card-body {
     position: relative;
-    padding: 1rem;
-    background: #ffffff;
-    color: #000000;
+    padding: 1.5rem 1rem;
+    background: var(--card-bg);
+    color: var(--text);
     width: 100%;
     height: 100%;
     border-radius: 20px;
     z-index: 2;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.25rem;
+    box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+}
+
+.carousel-title {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    
 }
 
 /* Status badge styles */
@@ -102,24 +169,24 @@ body {
 }
 
 .status-online {
-    background-color: #4CAF50;
+    background-color: var(--online);
     color: white;
 }
 
 .status-offline {
-    background-color: #9E9E9E;
+    background-color: var(--offline);
     color: white;
 }
 
 .status-archived {
-    background-color: #9c45ff;
+    background-color: var(--archived);
     color: white;
 }
 
 /* Server header styles */
 .server-header {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .card-title {
@@ -129,7 +196,7 @@ body {
 
 .card-motd {
     font-size: 0.9rem;
-    color: #666;
+    color: var(--muted);
     margin-bottom: 0;
 }
 
@@ -140,8 +207,8 @@ body {
     justify-content: space-between;
     padding: 1rem 0;
     margin: 0.5rem 0;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    border-top: 1px solid var(--muted-border);
+    border-bottom: 1px solid var(--muted-border);
 }
 
 .info-block {
@@ -151,7 +218,7 @@ body {
 
 .info-block h6 {
     font-size: 0.8rem;
-    color: #666;
+    color: var(--muted);
     margin-bottom: 0.3rem;
 }
 
@@ -163,7 +230,7 @@ body {
 
 .divider {
     width: 1px;
-    background-color: #eee;
+    background-color: var(--muted-border);
     margin: 0 1rem;
 }
 
@@ -177,6 +244,13 @@ body {
     font-size: 0.9rem;
     line-height: 1.4;
     margin: 0;
+    color: var(--text);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
