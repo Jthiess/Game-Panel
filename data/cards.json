@@ -11,77 +11,58 @@
       "description": "This modpack has a super cozy vibe, features a custom world, fancy wildlife, pretty shaders, and a quest system (Its not forced down your throat tho). It is overall just a really nice environment to play Minecraft in, and it seems like it would be fun!",
       "ip": "homestead.mentallygay.com",
       "modded": true,
-      "pack-link": "https://modrinth.com/modpack/homestead"
+      "pack-link": "https://modrinth.com/modpack/homestead",
+      "pack-desc": "Homestead is a cozy Vanilla+ Minecraft modpack built for explorers, builders, and survivors. Whether you prefer peaceful building or daring adventures, Homestead provides a handcrafted experience with custom quests, structures, mobs, and items — all designed to keep you playing far beyond the usual two-week phase.",
+      "pack-img-id": "homestead",
+      "pack-version": "1.2.3"
     },
     {
-      "name": "GayFuck",
-      "motd": "die",
+      "name": "Spooktastic",
+      "motd": "I shit myself while playing this",
       "online": true,
       "game": "Minecraft",
-      "playing_now": 8,
-      "playing_max": 20,
-      "version": "1.20.4",
-      "description": "fuck off",
-      "modded": false
-    },
-    {
-      "name": "Game Server 3",
-      "motd": "Maintenance tonight",
-      "online": false,
-      "game": "Valheim",
       "playing_now": 0,
-      "playing_max": 50,
-      "version": "0.214.4",
-      "description": "PvE world for friends"
-    },
-    {
-      "name": "Game Server 4",
-      "motd": "Event this weekend",
-      "online": true,
-      "game": "Terraria",
-      "playing_now": 4,
-      "playing_max": 16,
-      "version": "1.4.4",
-      "description": "Classic modded"
-    },
-    {
-      "name": "Game Server 5",
-      "motd": "Join the race",
-      "online": true,
-      "game": "GTA V",
-      "playing_now": 20,
-      "playing_max": 32,
-      "version": "1.0",
-      "description": "Roleplay and racing"
+      "playing_max": 20,
+      "version": "1.20.1",
+      "description": "This modpack is all about the spooks and scares! It is story based, featuring a quest system that everyone can work cooperatively through. Every few nights, the difficulty is cranked to 10, when surviving even normal nights on your own is already unlikely. Because of this, the day/night cycle is extended, giving you plenty of time to prepare. Additionally, this pack has built-in shaders which makes it impossible to navigate at night unless you brought  your lantern.",
+      "ip": "spooky.mentallygay.com",
+      "modded": true,
+      "pack-link": "https://www.curseforge.com/minecraft/modpacks/fear-nightfall",
+      "pack-desc": "Made for CO-OP. A unique, immersive and difficult horror modpack with a campaign and tons of custom content.",
+      "pack-img-id": "fear-nightfall",
+      "pack-version": "1.1.4"
     }
   ],
   "bottom_cards": [
     {
-      "name": "Bottom Card A",
-      "motd": "",
-      "game": "Details A",
-      "version": "1.8.9",
-      "file_size": "150MB",
-      "retirement_date": "2025-12-31",
-      "description": "BottomA description"
+      "name": "All The Mods 9",
+      "motd": "Every last one!?",
+      "game": "minecraft",
+      "version": "1.20.1",
+      "description": "All the mods in one server! Can you handle it? dare you try? Join us and find out! This was written by Github Copilot.",
+      "file_size": "3.24 GB",
+      "retirement_date": "3/23/2025",
+      "modded": true,
+      "pack-link": "https://www.curseforge.com/minecraft/modpacks/all-the-mods-9",
+      "pack-desc": "ATM9 has over 400 mods loaded and countless quests and a built in proper endgame. Can you craft the ATM Star? Do you dare take on the Gregstar?",
+      "pack-img-id": "atm9",
+      "pack-version": "9-0.2.53",
+      "world_link": "https://drive.proton.me/urls/P8ETXSHVDC#GcnAk6HSxeh8"
     },
     {
-      "name": "Bottom Card B",
-      "motd": "",
-      "game": "Details B",
-      "version": "2.3.1",
-      "file_size": "220MB",
-      "retirement_date": "2026-06-30",
-      "description": "BottomB description"
-    },
-    {
-      "name": "Bottom Card C",
-      "motd": "",
-      "game": "Details C",
-      "version": "0.9.5",
-      "file_size": "80MB",
-      "retirement_date": "2024-11-15",
-      "description": "BottomC description"
+      "name": "Minecraft Chocolate Edition",
+      "motd": "Minecraft CE: Chocolate Edition",
+      "game": "minecraft",
+      "version": "1.19.2",
+      "description": "Minecraft but chocolate and not vanilla",
+      "file_size": "2.19 GB",
+      "retirement_date": "08/22/2024",
+      "modded": true,
+      "pack-link": "https://www.curseforge.com/minecraft/modpacks/mc-chocolate-edition",
+      "pack-desc": "This modpack is not Vanilla Plus, or Vanilla 2, or any other fancy term- it's Chocolate. Straight up. This modpack is Minecraft if it had Terraria devs, Minecraft with direction, so you can play without the urge to ditch your survival world after getting iron.",
+      "pack-img-id": "chocolate-edition",
+      "pack-version": "1.7.0",
+      "world_link": "https://drive.proton.me/urls/8W3JY72VA4#SdAopVxxdEfp"
     }
   ]
 }

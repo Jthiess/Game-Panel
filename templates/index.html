@@ -39,7 +39,17 @@
         <div class="carousel-row" id="carousel-middle">
           {# Loop through middle_cards using Jinja templating #}
           {% for card in middle_cards %}
-          <article class="carousel-card">
+          <article class="carousel-card"
+            data-modded="{{ card.modded|default(false)|lower }}"
+            data-ip="{{ card.ip|default('') }}"
+            data-game="{{ card.game|default('') }}"
+            {% if card.modded %}
+            data-pack-name="{{ card.name }}"
+            data-pack-desc="{{ card['pack-desc']|default('') }}"
+            data-pack-link="{{ card['pack-link']|default('') }}"
+            data-pack-img-id="{{ card['pack-img-id']|default('') }}"
+            data-pack-version="{{ card['pack-version']|default('') }}"
+            {% endif %}>
             <div class="card-image">
               <img src="{{ card.image }}" alt="{{ card.name }} image">
             </div>
@@ -80,14 +90,24 @@
            ========================= -->
       <section class="section section-bottom">
         <div class="d-flex justify-content-between align-items-center mb-2">
-          <h2 class="carousel-title">Bottom Carousel</h2>
+          <h2 class="carousel-title">Archived Servers</h2>
         </div>
 
         <!-- Horizontal scrollable carousel for bottom cards -->
         <div class="carousel-row" id="carousel-bottom">
           {# Loop through bottom_cards using Jinja templating #}
           {% for card in bottom_cards %}
-          <article class="carousel-card">
+          <article class="carousel-card"
+            data-modded="{{ card.modded|default(false)|lower }}"
+            data-game="{{ card.game|default('') }}"
+            data-world-link="{{ card.world_link|default('') }}"
+            {% if card.modded %}
+            data-pack-name="{{ card.name }}"
+            data-pack-desc="{{ card['pack-desc']|default('') }}"
+            data-pack-link="{{ card['pack-link']|default('') }}"
+            data-pack-img-id="{{ card['pack-img-id']|default('') }}"
+            data-pack-version="{{ card['pack-version']|default('') }}"
+            {% endif %}>
             <div class="card-image">
               <img src="{{ card.image }}" alt="{{ card.name }} image">
             </div>
@@ -127,6 +147,60 @@
         </div>
       </section>
 
+    </div>
+
+    <!-- Fullscreen Panel -->
+    <div id="fullscreen-panel" class="fullscreen-panel">
+      <button id="close-panel" class="close-panel" aria-label="Close panel">×</button>
+      <div class="panel-content">
+        <div class="panel-header">
+          <img id="panel-image" src="" alt="Server image">
+          <div class="panel-status">
+            <div id="panel-status-badge" class="status-badge"></div>
+          </div>
+        </div>
+        <div class="panel-body-with-mod">
+          <div class="panel-body">
+            <h2 id="panel-title"></h2>
+            <p id="panel-motd" class="panel-motd"></p>
+            <div class="panel-info-grid">
+              <div class="panel-info-block">
+                <h6>Players</h6>
+                <p id="panel-players"></p>
+              </div>
+              <div class="panel-info-block">
+                <h6>Version</h6>
+                <p id="panel-version"></p>
+              </div>
+              <div class="panel-info-block">
+                <h6>Status</h6>
+                <p id="panel-status"></p>
+              </div>
+            </div>
+
+            <div class="panel-description">
+              <h6>Description</h6>
+              <p id="panel-description"></p>
+            </div>
+            <button id="copy-ip-btn" class="copy-ip-button" style="display:none;">
+              <span id="ip-text"></span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M5 15H4C2.89543 15 2 14.1046 2 13V4C2 2.89543 2.89543 2 4 2H13C14.1046 2 15 2.89543 15 4V5" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </button>
+          </div>
+          <aside id="modpack-section" class="modpack-section" style="display:none;">
+            <div class="modpack-icon" id="modpack-icon"></div>
+            <div class="modpack-details">
+              <h4 id="modpack-name"></h4>
+              <p id="modpack-version" class="modpack-version" style="display:none;"></p>
+              <p id="modpack-description"></p>
+              <a id="modpack-link" href="#" target="_blank" class="modpack-link">View Modpack</a>
+            </div>
+          </aside>
+        </div>
+      </div>
     </div>
 
     <!-- Bootstrap JS for interactive components -->

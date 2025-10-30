@@ -1,0 +1,37 @@
+{
+  "middle_cards": [
+    {
+      "name": "",
+      "motd": "",
+      "online": true,
+      "game": "",
+      "playing_now": 0,
+      "playing_max": 0,
+      "version": "",
+      "description": "",
+      "ip": "",
+      "modded": true,
+      "pack-link": "",
+      "pack-desc": "",
+      "pack-img-id": "",
+      "pack-version": ""
+    }
+  ],
+  "bottom_cards": [
+    {
+      "name": "",
+      "motd": "",
+      "game": "",
+      "version": "",
+      "description": "",
+      "file_size": "",
+      "retirement_date": "",
+      "modded": true,
+      "pack-link": "",
+      "pack-desc": "",
+      "pack-img-id": "",
+      "pack-version": "",
+      "world_link": ""
+    }
+  ]
+}
